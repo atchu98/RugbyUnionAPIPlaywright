@@ -19,12 +19,7 @@ This guide explains how to set up and run an API test using Playwright in JavaSc
 
 ## Step 2: Set Up a New Node.js Project
 
-1. Create a new project folder and navigate to it:
-
-   ```sh
-   mkdir playwright-api-test
-   cd playwright-api-test
-   ```
+1. Navigate to it:
 
 2. Initialize a new Node.js project:
 
