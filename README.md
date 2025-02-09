@@ -60,19 +60,7 @@ npx playwright test api.test.js
 
 To configure Playwright for multiple tests:
 
-1. Create a `playwright.config.js` file:
-
-   ```js
-   import { defineConfig } from '@playwright/test';
-
-   export default defineConfig({
-     use: {
-       baseURL: 'https://jsonplaceholder.typicode.com',
-     },
-   });
-   ```
-
-2. Run all tests using:
+1.  Run all tests using:
 
    ```sh
    npx playwright test
