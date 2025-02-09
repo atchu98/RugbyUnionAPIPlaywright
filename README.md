@@ -19,9 +19,9 @@ This guide explains how to set up and run an API test using Playwright in JavaSc
 
 ## Step 2: Set Up a New Node.js Project
 
-1. Navigate to it:
+1. Navigate to it
 
-2. Initialize a new Node.js project:
+2. Initialize a Node.js project:
 
    ```sh
    npm init -y
