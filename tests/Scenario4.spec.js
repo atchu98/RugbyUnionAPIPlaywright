@@ -7,9 +7,7 @@ test('Make a GET request to the endpoint with an invalid competition name', asyn
   const endpoint = '/wc-poll-data/container/sport-standings?urn=urn:bbc:sportsdata:rugby-union:tournament:invalid';
 
   // Send GET request with required headers
-  const getApiResponse = await request.get(endpoint, {
-    headers: { 'x-test-harness': 'true' },
-  });
+  const getApiResponse = await request.get(endpoint);
 
   const responseBody = await getApiResponse.json()
   console.log(responseBody);
