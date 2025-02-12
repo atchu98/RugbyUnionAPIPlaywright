@@ -8,7 +8,7 @@ test('Make a GET request to the endpoint including the header x-test-harness set
 
   // Send GET request with required headers
   const getApiResponse = await request.get(endpoint, {
-    headers: { 'x-test-harness': 'true' },
+    headers: { 'x-test-harness': 'true'},
   });
 
   // Parse response headers
@@ -21,6 +21,11 @@ test('Make a GET request to the endpoint including the header x-test-harness set
 
   // Assertions
   expect(getApiResponse.ok()).toBeTruthy(); 
-  //expect(responseHeaders).toHaveProperty('x-test-harness');
-  //expect(responseHeaders['x-test-harness']).toBe('true'); 
+
+  ///// The below responseheader assertions return as failed as the (Received path: []), the received path is undefined, 
+  /////I attempted this in postman and received the same result
+
+   expect(responseHeaders).toHaveProperty('x-test-harness');
+   expect(responseHeaders['x-test-harness']).toBe('true'); 
+
 })
