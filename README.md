@@ -115,9 +115,9 @@ Scenario: Validate response data for different competition (Scenario 3)
 ```gherkin
 Scenario: API handles an invalid competition gracefully (Scenario 4)
 
-    Given I request data for a non-existent competition
+    Given I data endpoint is invalid
 
-    When I request data for a non-existent competition
+    When I make a GET request for invalid competition
 
     Then the response should contain status code is 404
 
